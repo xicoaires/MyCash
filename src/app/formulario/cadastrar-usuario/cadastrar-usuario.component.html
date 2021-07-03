@@ -1,1 +1,33 @@
-<p>cadastrar-usuario works!</p>
+<section class="section-container">
+    <mat-card class="example-card">
+      <mat-card-title>
+        <span class ="logo-span">
+          <h1>CADASTRO</h1>
+        </span>
+      </mat-card-title>
+      <mat-card-content>
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <mat-label>Nome</mat-label>
+            <input matInput type="text" required>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Telefone</mat-label>
+            <input matInput type="tel" required>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+                <mat-label>E-mail</mat-label>
+                  <input matInput type="email" required>
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Senha</mat-label>
+                    <input matInput type="password" required>
+                  </mat-form-field>
+              </form>            
+        </mat-card-content>
+        <mat-card-actions class="container-buttons">
+            <button (click)="backToLogin()" class="button-cancel" mat-button>Cancelar</button>
+            <button class="button-save" (click)="backToLogin()" mat-button>Salvar</button>
+        </mat-card-actions>
+      </mat-card>
+</section>

@@ -1,3 +1,8 @@
+:host{
+  display: flex;
+  justify-content: center;
+}
+
 .example-card {
     max-width: 400px;
   }
@@ -15,4 +20,31 @@
   
   .example-full-width {
     width: 100%;
+  }
+
+  .logo-span {
+    display: flex;
+    justify-content: center;    
+  
+    img {
+      width: 150px;
+    }
+  }
+
+  .container-button-enter {
+    display: flex;
+    justify-content: center;
+
+    button {
+      background-color: #4470D6 !important;
+    }
+  }
+
+  .container-buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-container {
+    margin: 120px;
   }
