@@ -1,6 +1,7 @@
 :host{
   display: flex;
   justify-content: center;
+  background-color: #777;
 }
 
 .example-card {
@@ -45,6 +46,10 @@
     justify-content: space-between;
   }
 
+  /* ALINHAMENTO VERTICAL COM FLEXBOX */
   .section-container {
-    margin: 120px;
-  }
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } 

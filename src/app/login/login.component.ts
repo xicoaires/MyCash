@@ -20,4 +20,5 @@ export class LoginComponent implements OnInit {
   recoverPassword(){
     this.router.navigate(['/recuperar-senha']);
   }
+  
 }
