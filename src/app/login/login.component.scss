@@ -1,7 +1,8 @@
 :host{
   display: flex;
   justify-content: center;
-  background-color: #777;
+  background: rgb(91,100,255);
+  background: linear-gradient(0deg, rgba(91,100,255,1) 0%, rgba(134,212,255,1) 100%);
 }
 
 .example-card {
