@@ -1,8 +1,10 @@
 :host{
   display: flex;
   justify-content: center;
-  background: rgb(91,100,255);
-  background: linear-gradient(0deg, rgba(91,100,255,1) 0%, rgba(134,212,255,1) 100%);
+  background: #acb6e5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 .example-card {
