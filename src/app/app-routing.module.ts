@@ -9,16 +9,19 @@ import { CadastrarUsuarioComponent } from './formulario/cadastrar-usuario/cadast
 import { pathToFileURL } from 'url';
 import { RecuperarSenhaComponent } from './formulario/recuperar-senha/recuperar-senha.component';
 import { CadastrosComponent } from './formulario/cadastros/cadastros.component';
+import { AuthGuard } from './service/auth.guard';
+import { NotFoundComponent } from './sharedComponents/not-found/not-found.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'relatorio-despesa', component: RelatorioDespesaComponent},
-  {path: 'relatorio-receita', component: RelatorioReceitaComponent},
+  {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
+  {path: 'relatorio-despesa', component: RelatorioDespesaComponent, canActivate: [AuthGuard]},
+  {path: 'relatorio-receita', component: RelatorioReceitaComponent, canActivate: [AuthGuard]},
   {path: 'cadastrar-usuario', component: CadastrarUsuarioComponent},
   {path: 'recuperar-senha', component: RecuperarSenhaComponent},
-  {path: 'cadastros', component: CadastrosComponent}
+  {path: 'cadastros', component: CadastrosComponent},
+  {path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

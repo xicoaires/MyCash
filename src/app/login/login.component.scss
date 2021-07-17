@@ -10,11 +10,6 @@
 .example-card {
     max-width: 400px;
   }
-  
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
 
   .example-form {
     min-width: 150px;
@@ -49,10 +44,20 @@
     justify-content: space-between;
   }
 
-  /* ALINHAMENTO VERTICAL COM FLEXBOX */
   .section-container {
+    width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
   } 
+
+      /*
+    ALINHAMENTO POR OLUNA FLEXBOX
+    .section-container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    } 
+    */

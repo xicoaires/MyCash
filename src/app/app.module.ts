@@ -15,6 +15,10 @@ import { CadastrarUsuarioComponent } from './formulario/cadastrar-usuario/cadast
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NotFoundComponent } from './sharedComponents/not-found/not-found.component';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 @NgModule({
@@ -27,7 +31,8 @@ import { MatButtonModule } from '@angular/material/button';
     CadastrosComponent,
     LoginComponent,
     RecuperarSenhaComponent,
-    CadastrarUsuarioComponent
+    CadastrarUsuarioComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +41,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     MatInputModule,
     MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

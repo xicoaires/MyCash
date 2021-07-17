@@ -1,19 +1,15 @@
 :host{
     display: flex;
     justify-content: center;
-    background: #9796f0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    // MUDAR COR DA PAGINA ATUAL
+    // background: #9796f0;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   
   .example-card {
       max-width: 400px;
-    }
-    
-    .example-header-image {
-      background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-      background-size: cover;
     }
   
     .example-form {
@@ -49,8 +45,9 @@
     }
   
     .section-container {
+      width: 100vw;
       height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      align-items: center;
     } 
